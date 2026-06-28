@@ -1,11 +1,17 @@
 # Bayesian GLM Computational Statistics
 
-This repository contains a computational statistics project focused on generalized linear models.
+This repository contains a computational statistics project focused on generalized linear models and Bayesian inference.
 
-The project implements Fisher scoring from scratch for logistic and Poisson regression. It also includes Bayesian estimation using a Markov Chain Monte Carlo approach.
+The project implements Fisher Scoring from scratch for logistic regression and Poisson regression with canonical link functions.
 
-The analysis is applied to two datasets: credit card approval data and hospital length-of-stay data.
+It also develops a Random Walk Metropolis-Hastings algorithm to estimate Bayesian logistic and Poisson regression models.
 
-The workflow covers model implementation, parameter estimation, convergence diagnostics, and interpretation of covariate effects. Trace plots and autocorrelation plots are used to assess the behavior of the MCMC chains.
+The analysis is applied to two datasets: a credit card approval dataset and a hospital length-of-stay dataset.
 
-The project highlights the connection between Fisher scoring and Newton’s method under canonical link functions.
+The project compares frequentist estimates with posterior summaries obtained through MCMC simulation.
+
+Particular attention is given to prior specification, proposal tuning, burn-in selection, and convergence diagnostics.
+
+Trace plots and autocorrelation plots are used to evaluate the stability and mixing behavior of the MCMC chains.
+
+The results highlight the most influential covariates in each model, including credit reports, active accounts, income, medical procedure type, and gender.
